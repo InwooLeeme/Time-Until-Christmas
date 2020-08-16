@@ -17,8 +17,11 @@ function getUntilTime(){
     const    untilSec = Math.trunc((untilChristmas) % (minsToMilliSec) / secToMilliSec);
     const    untilMins = Math.trunc((untilChristmas) % (hoursToMilliSec) / minsToMilliSec);
 
-    clock.innerText = `
-    ${untilDay}d:${untilHours}h:${untilMins}m:${untilSec}s
+    clock.innerHTML = `
+    ${untilDay < 0 ? `0${untilDay}` : `${untilDay}`}d:
+    ${untilHours < 0 ? `0${untilHours}`:`${untilHours}`}h:
+    ${untilMins < 0 ? `0${untilMins}`:`${untilMins}`}m:
+    ${untilSec < 0 ? `0${untilSec}`:`${untilSec}`}s
     `;
 }
 

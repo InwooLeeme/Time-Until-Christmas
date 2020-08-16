@@ -1,0 +1,31 @@
+
+body.html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://images.unsplash.com/photo-1513538318453-d0cc70acc86d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .title,
+.container .clock{
+    color : #ffffff;
+    font-size: 40px;
+}
